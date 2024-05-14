@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LiveChatIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnM-XJ-yqP">
+                                <rect key="frame" x="59" y="528" width="280" height="34"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-l7-OQ4">
+                                <rect key="frame" x="59" y="570" width="280" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFW-Z7-sGH">
+                                <rect key="frame" x="59" y="625" width="280" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="onPressLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Qx-hT-Ufs"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-2O-vlg">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EnE-l7-OQ4" firstAttribute="top" secondItem="dnM-XJ-yqP" secondAttribute="bottom" constant="8" symbolic="YES" id="3im-rO-9oX"/>
+                            <constraint firstItem="1pJ-2O-vlg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.610687" id="BsW-vZ-E2H"/>
+                            <constraint firstItem="dnM-XJ-yqP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.712468" id="EOe-Yp-vpJ"/>
+                            <constraint firstItem="KFW-Z7-sGH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HFK-7G-5e9"/>
+                            <constraint firstItem="EnE-l7-OQ4" firstAttribute="top" secondItem="1pJ-2O-vlg" secondAttribute="bottom" constant="80" id="HvN-OU-V1j"/>
+                            <constraint firstItem="KFW-Z7-sGH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.712468" id="OJf-lf-VGj"/>
+                            <constraint firstItem="1pJ-2O-vlg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uob-9q-brO"/>
+                            <constraint firstItem="1pJ-2O-vlg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="V93-ad-Dfx"/>
+                            <constraint firstItem="1pJ-2O-vlg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.150235" id="a2W-k6-suv"/>
+                            <constraint firstItem="dnM-XJ-yqP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="auK-Kw-f0p"/>
+                            <constraint firstItem="KFW-Z7-sGH" firstAttribute="top" secondItem="EnE-l7-OQ4" secondAttribute="bottom" constant="21" id="jtx-b9-H9L"/>
+                            <constraint firstItem="EnE-l7-OQ4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.712468" id="puc-IQ-ZWo"/>
+                            <constraint firstItem="EnE-l7-OQ4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sHo-gT-We0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="341.33334350585938" height="341.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
